@@ -1,0 +1,12 @@
+{
+    "name": "@soapjs/integr8-nestjs",
+    "version": "1.0.0",
+    "peerDependencies": {
+      "@nestjs/core": "^10.0.0",
+      "@nestjs/common": "^10.0.0",
+      "@nestjs/platform-express": "^10.0.0"
+    },
+    "dependencies": {
+      "@soapjs/integr8": "^0.1.1"
+    }
+  }
