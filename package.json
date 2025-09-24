@@ -1,6 +1,6 @@
 {
     "name": "@soapjs/integr8-nestjs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "homepage": "https://docs.soapjs.com",
     "repository": "https://github.com/soapjs/integr8-nestjs",
     "main": "dist/index.js",
@@ -41,7 +41,7 @@
         "@nestjs/platform-express": "^10.0.0"
     },
     "dependencies": {
-        "@soapjs/integr8": "^0.1.1"
+        "@soapjs/integr8": "^0.1.2"
     },
     "engines": {
         "node": ">=18.0.0"

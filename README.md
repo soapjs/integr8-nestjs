@@ -36,15 +36,38 @@ npm install @nestjs/core @nestjs/common @nestjs/platform-express
 
 This package extends `@soapjs/integr8` with NestJS-specific features. All standard integr8 CLI commands continue to work:
 
+#### Environment Management
 ```bash
-# Standard integr8 commands work as before
-npx integr8 init
-npx integr8 test
-npx integr8 run
-npx integr8 clean
+# Start environment
+npx integr8 up
 
-# Plus new NestJS-specific functionality
-import { bootstrapNestJsIntegr8 } from '@soapjs/integr8-nestjs';
+# Fast start (skip health checks)
+npx integr8 up --fast
+
+# Stop environment
+npx integr8 down
+```
+#### Test Execution
+```bash
+# Run all tests
+npx integr8 run
+
+# Run specific tests
+npx integr8 run --pattern "users.*"
+
+# Watch mode
+npx integr8 run --watch
+
+# CI mode (up + run + down)
+npx integr8 ci
+```
+#### Test Generation
+```bash
+# Generate from routes
+npx integr8 generate --command "npx soap list-routes" --scenarios
+
+# Add single endpoint
+npx integr8 add-endpoint "GET /users/:id" --scenarios
 ```
 
 ## Quick Start
