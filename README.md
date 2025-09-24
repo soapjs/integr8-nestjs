@@ -32,6 +32,21 @@ This package requires the following peer dependencies:
 npm install @nestjs/core @nestjs/common @nestjs/platform-express
 ```
 
+### CLI Compatibility
+
+This package extends `@soapjs/integr8` with NestJS-specific features. All standard integr8 CLI commands continue to work:
+
+```bash
+# Standard integr8 commands work as before
+npx integr8 init
+npx integr8 test
+npx integr8 run
+npx integr8 clean
+
+# Plus new NestJS-specific functionality
+import { bootstrapNestJsIntegr8 } from '@soapjs/integr8-nestjs';
+```
+
 ## Quick Start
 
 ### 1. Create Bootstrap File

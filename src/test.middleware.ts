@@ -12,7 +12,7 @@ export function createTestMiddleware() {
         
         res.json({ success: true });
       } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: (error as Error).message });
       }
     } else if (req.path === '/health') {
       res.json({ 
